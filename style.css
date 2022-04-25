@@ -1,0 +1,276 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+    overflow-x:hidden;
+    max-width: 100%;
+    margin:0;
+    margin-bottom: 150px;
+
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Andika';
+    
+}
+#bg{
+    background-image: url(https://source.unsplash.com/featured/?men,fashion,sneakers);
+    /*https://images.unsplash.com/photo-1549942686-486aa99d2223*/
+    background-repeat: no-repeat;
+    min-height:600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    text-align: center;
+}
+#banner_content {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.carousel-inner img {
+    width: 100%;
+    height:100%;
+}
+.footer{
+    position: absolute;
+    margin-top: 50px;
+    background-color: #141414;
+    min-height:150px;
+    padding-top:40px;
+    width: 100%;
+   
+    bottom: 0;
+    
+}
+.container  a {
+    color:black;
+}
+.container a:hover{
+    color:grey;
+    
+}
+#size{
+    max-height:200px;
+}
+
+.read .add-user {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #38b673;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+.read .add-user:hover {
+    background-color: #32a367;
+}
+
+.read table {
+    width: 100%;
+    padding-top: 30px;
+    border-collapse: collapse;
+}
+.read table thead {
+    background-color: #ebeef1;
+    border-bottom: 1px solid #d3dae0;
+}
+.read table thead td {
+    padding: 10px;
+    font-weight: bold;
+    color: #767779;
+    font-size: 14px;
+}
+.read table tbody tr {
+    border-bottom: 1px solid #d3dae0;
+}
+.read table tbody tr:nth-child(even) {
+    background-color: #fbfcfc;
+}
+.read table tbody tr:hover {
+    background-color: #376ab7;
+}
+.read table tbody tr:hover td {
+    color: #FFFFFF;
+}
+.read table tbody tr:hover td:nth-child(1) {
+    color: #FFFFFF;
+}
+.read table tbody tr td {
+    padding: 10px;
+}
+.read table tbody tr td:nth-child(1) {
+    color: #a5a7a9;
+}
+.read table tbody tr td.actions {
+    padding: 8px;
+    text-align: right;
+}
+.read table tbody tr td.actions .edit, .read table tbody tr td.actions .trash {
+    display: inline-flex;
+    text-align: right;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 10px 12px;
+}
+.read table tbody tr td.actions .trash {
+    background-color: #b73737;
+}
+.read table tbody tr td.actions .trash:hover {
+    background-color: #a33131;
+}
+.read table tbody tr td.actions .edit {
+    background-color: #37afb7;
+}
+.read table tbody tr td.actions .edit:hover {
+    background-color: #319ca3;
+}
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team .section-title{
+    text-align: center;
+}
+.team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.team .member .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.team .member .pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.team .member:hover img {
+    transform: scale(1.1);
+}
+
+.team .member .member-info {
+    padding-left: 30px;
+    padding-top: 80px;
+}
+
+:root {
+    --background-color: hsl(49 37% 94%);
+    --typewriterSpeed: 10s;
+}
+
+.team .member h4 {
+    position: relative;
+    font-family: "Source Code Pro", monospace;
+    width: max-content;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #525151;
+}
+
+.team .member h4::before,
+.team .member h4::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.team .member h4::before{
+    background: rgb(254, 254, 254);
+    animation: typewriter var(--typewriterSpeed) steps(29) 1s forwards;
+}
+
+.team .member h4::after{
+    width: .125rem;
+    background: black;
+    animation: 
+    typewriter var(--typewriterSpeed) steps(29) 1s forwards,
+    blink 800ms steps(29) infinite;
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }
+}
+
+
+.team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.team .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #fee83b;
+    bottom: 0;
+    left: 0;
+}
+
+.team .member p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #525151;
+}
+
+.team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.team .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #feecec;
+    color: #b70606;
+}
+
+.team .member .social a i {
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.team .member .social a:hover {
+    background: #e80808;
+    color: #fff;
+}
+
+.team .member .social a+a {
+    margin-left: 8px;
+}
